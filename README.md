@@ -1,48 +1,49 @@
 # mullafacation
 Implementation of the mullafacation operator in python
 
-"Mullafacation is a mathematical operation I created a long time ago. The rules are:
+# Short explanation
+Mullafacation is a mathematical operation I created a long time ago. The rules are:
 
-If the second number is 1 you add the first number plus the first number. Example: 11 M 1 = 22
+If the second number is 1 you add the first number plus the first number. Example: 11 Ⓜ︎ 1 = 22
 
-If the second number is 2 you subtract the first number minus the first number. Example: 11 M 2 = 0
+If the second number is 2 you subtract the first number minus the first number. Example: 11 Ⓜ︎ 2 = 0
 
-If the second number is 3 you multiply the first number by the first number. Example: 11 M 3 = 121
+If the second number is 3 you multiply the first number by the first number. Example: 11 Ⓜ︎ 3 = 121
 
-If the second number is 4 you divide the first number by the first number. Example: 11 M 4 = 0
+If the second number is 4 you divide the first number by the first number. Example: 11 Ⓜ︎ 4 = 0
 
-If the second number is 5 or higher you round the first number to the the second number. Example: 11 M 5 = 10"
+If the second number is 5 or higher you round the first number to the the second number. Example: 11 Ⓜ︎ 5 = 10
 
-Source: https://mullafacation.com/operation.html
+Source: https://mullafacation.com/operation.html (ASCII-only; uses M instead of the original Ⓜ︎)
+
+---
 
 # More details
-This section was written on 15:03, 20 July 2021. First published on GitHub on 7 April, 2025
+This background section was written on 15:03, 20 July 2021. First published on GitHub on 7 April, 2025
 
-## Background
+## Etymology
 
-Mullafacation is derived from "Mullac", Callum backwards, and the suffix ["-ation"](https://en.wiktionary.org/wiki/-ation#English), denoting a noun. The original verb used was to "mullac" two numbers together, despite its inconsistency with Mullafacation, but it is now only used to denote the original operation, and the more consistent term "mullify" is used to refer to modern mullafacation.
+_Mullafacation_ is derived from "Mullac" (_Callum_ backwards), and the suffix ["-ation"](https://en.wiktionary.org/wiki/-ation#English), denoting a noun. The original verb used was to "_mullac_" two numbers together, despite probably being the improper verb form of _Mullafacation_, but it is now only used to denote the original operation, while the term _mullify_ is used to refer to modern mullafacation.
 
 ## Bimullafacation
-Bimullafacation or mullacation (denoted digitally by M⦂) are the terms hereby used to describe the original mullafacation. It could take two arguments, with the second argument being either 1 or 2. If the second argument was 1, the first argument would be added on to itself (doubled/multiplied by 2) and if it was 2 it would be subtracted from itself (made 0). The original rules were like this:
+_Bimullafacation_ or "_mullacation_" (digitally represented by M⦂) are the terms hereby used to describe the original mullafacation. It could take two arguments, with the second argument being either 1 or 2. If the second argument was 1, the first argument would be added on to itself (doubled/multiplied by 2) and if it was 2 it would be subtracted from itself (made 0). The original rules were like this:
 
 𝑥 Ⓜ︎ 1 = 𝑥 + 𝑥
 
 𝑥 Ⓜ︎ 2 = 𝑥 - 𝑥
 
-𝑥 Ⓜ︎ n = NaN | n > 2
+It did not do exception handling for any larger second parameters. (i.e. 𝑥 Ⓜ︎ n = NaN | n > 2)
 
-And if 𝑥 ∈ ℝ, then the above can be simplified as:
+The above can be simplified as:
 
 𝑥 Ⓜ︎ 1 = 2𝑥
 
 𝑥 Ⓜ︎ 2 = 0
 
-𝑥 Ⓜ︎ n = NaN | n > 2
+This is hereby known as _compressed mullacation_. According to Callum, the only reasonable use for mullafacation is to demonstrate how to simplify functions like this because its definition is overly superfluous.
 
-This is hereby known as compressed mullacation. According to Callum, the only reasonable use for mullafacation is to demonstrate how to simplify functions like this because its definition is overly superfluous.
-
-Because of the right hand side being a much easier way to express the left, the only possible use is to demonstrate compressed functions.
-Mullacation's notation changed to clarify that the second argument must be one of two inputs. This notation had two checkboxes at the side of the M so that bimullafacation could never result in nullification as an output, and was then represented as an M with two boxes above each other, one to be ticked. (hereby digitally represented as 𝑥 M⦂ 𝑦).
+Because the operations that mullafacation employs are already very simple ways to achieve the same result including already having a relatively simple second parameter, mullafacation's only possible use is to demonstrate compressed functions.
+Mullacation's notation changed to clarify that the second argument must be one of two inputs. This notation had two checkboxes at the side of the M so that bimullafacation could never output NaN, and was then represented as an M with two boxes above each other, one to be ticked. (hereby digitally represented as 𝑥 M⦂ 𝑦).
 
 
 ## Operation
