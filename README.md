@@ -13,4 +13,4 @@ If the second number is 4 you divide the first number by the first number. Examp
 
 If the second number is 5 or higher you round the first number to the the second number. Example: 11 M 5 = 10"
 
-[Original source] (https://mullafacation.com/operation.html)
+Source: https://mullafacation.com/operation.html
